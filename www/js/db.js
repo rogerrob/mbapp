@@ -8,7 +8,7 @@ openRequest.onupgradeneeded = function (event) {
     // has been submitted to the open() call.
     var db = event.target.result;
 
-    if(!db.objectStoreNames.contains('tableentry')){
+     if(!db.objectStoreNames.contains('tableentry')){
       var os = db.createObjectStore('tableentry', { keyPath: 'timedate'});
       //Create Index for Name
       os.createIndex('activity','activity',{unique:false});
@@ -46,7 +46,7 @@ openRequest.onupgradeneeded = function (event) {
       // Store values in the newly created objectStore.
       var ObjectStore = db.transaction("tableentry", "readwrite").objectStore("tableentry");
       // change the XXX.foreach name if DB = "name exists"
-      change.forEach(function(tableentrys) {
+      tables.forEach(function(tableentrys) {
         ObjectStore.add(tableentrys);
       });
     };

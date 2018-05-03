@@ -3,17 +3,14 @@
     <div class="navbar-inner">
         <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
         <div class="center sliding">Activity</div>
-        <div class="right">
-<!-- Right link contains only icon - additional "icon-only" class-->
-            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-        </div>
     </div>
 </div>
-<div class="pages">
-<div class="page-content">
   <div data-page="form" class="page store-data">
       <!-- Scrollable page content-->
       <div class="page-content">
+        <div class="content-block">
+            <img src="img/run.jpeg" width="100%">
+          </div>
     <form id="form" class="list-block store-data">
         <ul>
             <!--Activity Name-->
@@ -29,20 +26,17 @@
             </li>
             <!-- Date time-->
             <li>
-                <div class="item-content">
-                    <div class="item-inner">
-                        <div class="item-title label">Date & Time</div>
+              <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">Date</div>
                         <div class="item-input">
-                            <input type="datetime-local" name="timedate" id="timedate">
-                        </div>
-                    </div>
-                </div>
+                          <input type="date" placeholder="date" id="timedate">
             </li>
         </ul>
     </form>
     <div class="content-block">
         <p><a target="_blank" href="javascript:addDataActivity()" class="button">Sumbit</a></p>
-        <p><a href="index.html" class="button delete-storage-data">Cancel</a></p>
+        <p><a href="index.html" class="button">Cancel</a></p>
     </div>
 </div>
 </div>

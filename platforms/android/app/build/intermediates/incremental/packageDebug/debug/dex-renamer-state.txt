@@ -1,0 +1,4 @@
+#Fri Apr 27 13:38:50 BST 2018
+base.0=H\:\\webproj18\\projmb\\mbapp\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+file.0=H\:\\webproj18\\projmb\\mbapp\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
