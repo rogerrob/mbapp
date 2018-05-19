@@ -46,7 +46,7 @@ openRequest.onupgradeneeded = function (event) {
       // Store values in the newly created objectStore.
       var ObjectStore = db.transaction("tableentry", "readwrite").objectStore("tableentry");
       // change the XXX.foreach name if DB = "name exists"
-      tables.forEach(function(tableentrys) {
+      table.forEach(function(tableentrys) {
         ObjectStore.add(tableentrys);
       });
     };
@@ -131,8 +131,8 @@ function displayData(event) {
 	index.openCursor().onsuccess = function(event){
 		var cursor = event.target.result;
 		if(cursor){
-      output += "<tr id='newItem_"+cursor.value.activity+"'>";
-      output += "<td<span class='cursor newItem'>">+cursor.value.activity+"</span></td>";
+      output += "<tr>";
+      //output += "<td<span class='cursor newItem'>">+cursor.value.activity+"</span></td>";
 			output += "<td><span class='cursor newItem'>"+cursor.value.meal+"</span></td>";
       output += "<td><span class='cursor newItem'>"+cursor.value.calories+"</span></td>";
       output += "<td><span class='cursor newItem'>"+cursor.value.notes+"</span></td>";
